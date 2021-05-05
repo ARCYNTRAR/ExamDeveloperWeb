@@ -73,6 +73,7 @@ ul{
     border: none;
     z-index: 2;
     font-size: 1.5rem;
+    display: none;
 }
 /* ? Showcase */
 hr{
@@ -240,6 +241,10 @@ hr{
 
 @media (max-width: 1024px){
 
+    .menu-btn{
+        display: block;
+    }
+
     .nav-main .nav-menu{
         display: block;
         position: absolute;
@@ -277,5 +282,25 @@ hr{
 
     .footer-links .footer-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px){
+    .news-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .news-cards img {
+        height: 270px;
+    }
+
+    .cards-banner-one .content,
+    .cards-banner-two .content{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: 1fr;
     }
 }
