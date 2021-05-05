@@ -5,9 +5,9 @@
 }
 
 body{
-    background-color: #000;
     color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
@@ -82,7 +82,7 @@ hr{
 .showcase{
     width: 100%;
     height: 600px;
-    background: url('img/showcase2.jpg') no-repeat center;
+    background: url('img/desk.jpg') no-repeat center;
     background-size: cover;
     padding: 50px;
     margin-bottom: 20px;
@@ -91,6 +91,22 @@ hr{
     align-items: center;
     justify-content: flex-end;
 }
+
+.showcase-content{
+    background: rgba(72, 84, 96,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+.showcase-content p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
 
 .btn{
     cursor: pointer;
@@ -148,7 +164,7 @@ hr{
 .cards-banner-one{
     width: 100%;
     height: 350px;
-    background: url(img/tech-red.jpg);
+    background: url('img/banner1.jpg');
     margin-bottom: 40px;
 }
 
@@ -163,17 +179,26 @@ hr{
     margin: 10px 0 20px 0;
 }
 
+.cards-banner-one p,
+.cards-banner-two p{
+    font-size: 18px;
+}
 /*? Cards banner two */
 
 .cards-banner-two{
     width: 100%;
     height: 350px;
-    background: url('img/image-five.jpg') no-repeat center center/cover;
+    background: url('img/banner2.png') no-repeat center center/cover;
 }
 
 .cards-banner-two .content{
     width: 50%;
     padding: 100px 0 0 30px;    
+}
+
+.cards-banner-two p,
+.cards-banner-two h2{
+    margin: 10px 0 20px 0;
 }
 
 /* ? Social */
@@ -185,13 +210,22 @@ hr{
 .social p{
     text-align: center;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.hipervinculo{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .links a{
@@ -199,7 +233,12 @@ hr{
 }
 
 .links a i{
-    font-size: 3rem;
+    font-size: 3rem;    
+}
+
+.links span{
+    font-size: 1.5rem;   
+    text-align: center; 
 }
 
 /* ? Footer Links */
@@ -207,7 +246,7 @@ hr{
 .footer-links{
     background: #2f3640;
     color: #616161;
-    font-size: 12px;
+    font-size: 16px;
     padding: 35px 0;
 }
 
@@ -221,14 +260,16 @@ hr{
 
 .footer-container ul{
     margin: 0 auto;
+    width: 100%;
 }
 
 .footer-container ul li{
     line-height: 2.8;
+    text-align: center;
 }
 
 .footer{
-    background: #2f3640;
+    background: #000;
     color: #616161;
     font-size: 12px;
     padding: 20px 0;
@@ -280,6 +321,10 @@ hr{
         width: 80%;
     }
 
+    .links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .footer-links .footer-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -298,6 +343,10 @@ hr{
     .cards-banner-two .content{
         width: 100%;
         padding: 60px 20px;
+    }
+
+    .links{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-links .footer-container{

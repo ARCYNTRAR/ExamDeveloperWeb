@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>TechNews</title>
+     <title>CSS 2021</title>
      <!--* Font Awesome - Iconos -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
      <!--* Font: Oswald -->     
@@ -17,145 +17,181 @@
      <div class="container">
          <!-- Navegacion -->
          <nav class="nav-main">
-            <img src="img/brand.png" alt="TechNewsLogo" class="nav-brand">
+            <img src="img/ipn.jpg" alt="TechNewsLogo" class="nav-brand">
             <ul class="nav-menu">
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Blochain</a></li>
-                <li><a href="#">Artificial Inteligent</a></li>
+                <li><a href="#tecnologias">Tecnologías CSS</a></li>
+                <li><a href="#proyectos">Proyectos experimentales</a></li>
+                <li><a href="#futuro">El futuro de CSS</a></li>
+                <li><a href="#sitios">Sitios para aprender CSS</a></li>
             </ul>
             <ul class="nav-menu-right">
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS"><i class="fab fa-css3"></i></a></li>
             </ul>
          </nav>
          <hr>
 
         <!-- Showcase -->
         <header class="showcase">
-            <h2>Big News Today</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sint soluta vero porro non, voluptatum magnam architecto sequi facere dolorem vitae exercitationem itaque impedit quibusdam molestiae placeat omnis voluptates accusantium.</p>
-            <a href="#" class="btn">Read More <i class="fas fa-angle-double-right"></i></a>
+            <div class="showcase-content">
+                <h2>Tecnologías</h2>
+                <p>El ecosistema de CSS está sufriendo una renovación de clases, ya que antiguos pilares como Bootstrap tienen que hacer sitio a nuevos actores como Tailwind CSS. Sin hablar ya del nuevo movimiento CSS-in-JS el cual, pese a que aún tiene que entrar en el día a día de CSS, se está moviendo realmente rápido.</p>
+                <a href="https://2020.stateofcss.com/es-ES/technologies/" class="btn">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
         </header>
 
         <!-- Cards-->
-        <div class="news-cards">
+        <div class="news-cards" id="tecnologias">
             <div>
-                <img src="img/news1.jpg" alt="news one">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/new1.jpg" alt="Post Css">
+                <h3>Post Css</h3>
+                <p>Una herramienta para transformar CSS con JavaScript</p>
+                <a href="https://postcss.org/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news2.jpg" alt="news 2">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/sass.jpg" alt="news 2">
+                <h3>SASS</h3>
+                <p>Sass es el lenguaje de extensión CSS de grado profesional más maduro, estable y potente del mundo. </p>
+                <a href="https://sass-lang.com/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news3.jpg" alt="news 3">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/tailwind.png" alt="news 3">
+                <h3>Tailwind CSS</h3>
+                <p>Un marco de trabajo CSS de utilidad, repleto de clases como flex, pt-4, text-center y rotate-90 que se pueden componer para construir cualquier diseño, directamente en su marcado.</p>
+                <a href="https://tailwindcss.com/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news4.jpg" alt="news 4">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/bootstrap.png" alt="news 4">
+                <h3>Bootrstrap</h3>
+                <p>Diseñe y personalice rápidamente sitios responsivos con Bootstrap, el conjunto de herramientas de código abierto más popular del mundo, que incluye variables y mixins de Sass, un sistema de rejilla responsivo, numerosos componentes preconstruidos y potentes plugins de JavaScript.</p>
+                <a href="https://getbootstrap.com/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
 
         <!-- Banner -->
         <section class="cards-banner-one">
             <div class="content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis at dolor eos incidunt nemo alias quo! Possimus, alias odio.</p>
-                <a href="#" class="btn">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <h2>Proyectos experimentales hechos con css</h2>
+                <p>Hay muchas cosas que puedes hacer con CSS y un navegador web. A los grandes desarrolladores les encanta empujar los límites y mostrar cuánto es posible.</p>
+                   
+                <a href="#" class="btn">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
         </section>
 
         <!-- Cards-->
-        <div class="news-cards">
+        <div class="news-cards" id="proyectos">
             <div>
-                <img src="img/news1.jpg" alt="news one">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/proyecto1.png" alt="news one">
+                <h3>Barras de carga de gradiente</h3>
+                <p>Esta Página de carga de Sass usa gradientes animados y elementos redimensionables para crear un efecto de carga repetitiva.</p>
+                <a href="https://codepen.io/MaxStalker/pen/AktfK/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news2.jpg" alt="news 2">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/proyecto2.png" alt="news 2">
+                <h3>Animación del sistema solar</h3>
+                <p>Este es uno de los proyectos CSS más complejos que pude encontrar en línea. Esta dinámica diseño de sistema solar por Malik Dellidj se ejecuta en CSS puro sin ninguna imagen . </p>
+                <a href="https://codepen.io/kowlor/pen/ZYYQoy/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news3.jpg" alt="news 3">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/proyecto3.png" alt="news 3">
+                <h3>Buscaminas puros de CSS</h3>
+                <p>Nunca pensé que vería el día en que el dragaminas clásico de Windows podría jugarse usando CSS puro . Sin embargo, gracias al desarrollador Bali Balo ese día ha llegado.</p>
+                <a href="https://codepen.io/bali_balo/pen/BLJONk/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/news4.jpg" alt="news 4">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint in quasi, optio alias ad vero doloremque pariatur provident quae.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <img src="img/proyecto4.png" alt="news 4">
+                <h3>Conmutadores de día y de noche</h3>
+                <p>En la superficie este interruptor de palanca puede verse bastante simple. Se ejecuta a través de una entrada de casilla de verificación y pasa datos al back-end, aunque esa no es realmente la parte más impresionante.</p>
+                <a href="https://codepen.io/bnthor/pen/WQBNxO/">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/proyecto5.png" alt="news 4">
+                <h3>Parque de atracciones plano</h3>
+                <p>Todos hemos visto iconos e ilustraciones de vectores diseñado para la web . Pero, ¿qué pasa con las ilustraciones vectoriales de página completa diseñadas con CSS sin formato y código SVG?</p>
+                <a href="https://codepen.io/gxash/pen/YqmxWg/">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/proyecto6.png" alt="news 4">
+                <h3>Gráficos de barras animados en 3D</h3>
+                <p>Encontrarás docenas de diseños personalizados de barras 3D en CodePen, todos con sus propias animaciones. Pero estas barras 3D por Rafael González se destacan por todos los demás gráficos de barra CSS modernos. </p>
+                <a href="https://codepen.io/rgg/pen/rVgBEL/">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
 
         <!-- Banner two -->
-        <section class="cards-banner-two">
+        <section class="cards-banner-two" id="futuro">
             <div class="content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eaque, id doloremque inventore tempore ipsa similique, officia minus quasi quia nihil labore harum vitae amet sint hic consequuntur deserunt explicabo.</p>
-                <a href="#" class="btn">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <h2>El futuro de CSS: Modos de escritura + Propiedades y valores lógicos.</h2>
+                <p>Maquetar un sitio que soporta diferentes modos de escritura puede ser un dolor de cabeza si usas las propiedades relativas al flujo físico (las que usan *-top, *-left, *-bottom y *-right). ¿Solución?: Propiedades y valores relativos al flujo lógico (*-block/inline -start/end).</p>
+                <a href="https://medium.com/@SusCasasola/el-futuro-de-css-modos-de-escritura-propiedades-y-valores-l%C3%B3gicos-a9c4bcaae5a1" class="btn">Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
         </section>
 
         <!-- Social -->
-        <section class="social">
-            <p>Follow TechNews</p>
+        <section class="social" id="sitios">
+            <p>Mejores Sitios para aprender css</p>
             <div class="links">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
+                <div class="hipervinculo"><a href="https://www.youtube.com/channel/UCJl1YajcPWTeJNsQhGyMIMg"><i class="fab fa-youtube"></i></a>
+                <span>Falcon Master</span></div>
+                <div class="hipervinculo"><a href="https://www.youtube.com/channel/UCX9NJ471o7Wie1DQe94RVIg"><i class="fab fa-youtube"></i></a>
+                    <span>Fazt</span></div>
+                <div class="hipervinculo"><a href="https://www.youtube.com/c/Bluuweb/playlists"><i class="fab fa-youtube"></i></a>
+                    <span>Bluuweb !</span></div>
+                <div class="hipervinculo"><a href="https://www.youtube.com/channel/UCtoo4_P6ilCj7jwa4FmA5lQ"><i class="fab fa-youtube"></i></a>
+                    <span>Soy Dalto</span></div>
+                <div class="hipervinculo"><a href="https://www.youtube.com/channel/UC9IKtxn9AIGelnYmwYr0Lxw"><i class="fab fa-youtube"></i></a>
+                    <span>CodelyTV - Redescubre la programación</span></div>
+                <div class="hipervinculo"><a href="https://github.com/thedaviddias/Front-End-Checklist"><i class="fab fa-github"></i></a>
+                    <span>The Front-End Checklist</span></div>
+                <div class="hipervinculo"><a href="https://github.com/twbs/bootstrap"><i class="fab fa-github"></i></a>
+                    <span>Bootstrap</span></div>
+                <div class="hipervinculo"><a href="https://github.com/FortAwesome/Font-Awesome"><i class="fab fa-github"></i></a>
+                    <span>Font Awesome</span></div>
             </div>
         </section>
      </div>
 
      <!-- Footer Links -->
      <div class="footer-links">
-         <div class="footer-container">
-             <ul>
-                 <li><a href="#"><h3>Title one</h3></a></li>
-                 <li><a href="#">Blockchainf</a></li>
-                 <li><a href="#">Blockchainf</a></li>
-                 <li><a href="#">Blockchainf</a></li>
-                 <li><a href="#">Blockchainf</a></li>
-             </ul>
-             <ul>
-                <li><a href="#"><h3>Title one</h3></a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
+         <div class="footer-container">             
+            <ul>
+                <li><a href="#"><h3>Tecnologías</h3></a></li>
+                <li><a href="https://postcss.org/">Post Css</a></li>
+                <li><a href="https://sass-lang.com/">SASS</a></li>
+                <li><a href="https://tailwindcss.com/">Tailwind Css</a></li>
+                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
             </ul>
             <ul>
-                <li><a href="#"><h3>Title one</h3></a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
+                <li><a href="#"><h3>Proyectos</h3></a></li>
+                <li><a href="https://codepen.io/MaxStalker/pen/AktfK/">Barras de carga de gradiente</a></li>
+                <li><a href="https://codepen.io/kowlor/pen/ZYYQoy/">Animación del sistema solar</a></li>
+                <li><a href="https://codepen.io/bali_balo/pen/BLJONk/">Buscaminas puros de CSS</a></li>
+                <li><a href="https://codepen.io/bnthor/pen/WQBNxO/">Conmutadores de día y de noche</a></li>
+                <li><a href="https://codepen.io/gxash/pen/YqmxWg/">Parque de atracciones plano</a></li>
+                <li><a href="https://codepen.io/rgg/pen/rVgBEL/">Gráficos de barras animados en 3D</a></li>
             </ul>
             <ul>
-                <li><a href="#"><h3>Title one</h3></a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
-                <li><a href="#">Blockchainf</a></li>
+                <li><a href="#"><h3>Recomendaciones</h3></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJl1YajcPWTeJNsQhGyMIMg">Falcon Master</a></li>
+                <li><a href="https://www.youtube.com/channel/UCX9NJ471o7Wie1DQe94RVIg">Fazt</a></li>
+                <li><a href="https://www.youtube.com/c/Bluuweb/playlists">Bluuweb !</a></li>
+                <li><a href="https://www.youtube.com/channel/UCtoo4_P6ilCj7jwa4FmA5lQ">Soy Dalto</a></li>
+                <li><a href="https://www.youtube.com/channel/UC9IKtxn9AIGelnYmwYr0Lxw">CodelyTV - Redescubre la programación</a></li>
+                <li><a href="https://github.com/thedaviddias/Front-End-Checklist">The Front-End Checklist</a></li>
+                <li><a href="https://github.com/twbs/bootstrap">Bootstrap</a></li>
+                <li><a href="https://github.com/FortAwesome/Font-Awesome">Font Awesome</a></li>
             </ul>
+            <ul>
+                <li><a href="#"><h3>Enlaces a otras páginas</h3></a></li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">MDN</a></li>
+                <li><a href="https://2020.stateofcss.com/es-ES/technologies/">State of CSS</a></li>
+                <li><a href="https://odwebdesign.net/11-experimental-css-projects-thatll-blow-your-mind/">OD Web Design</a></li>
+                <li><a href="https://medium.com/@SusCasasola/el-futuro-de-css-modos-de-escritura-propiedades-y-valores-l%C3%B3gicos-a9c4bcaae5a1">Sussie Casasola</a></li>
+            </ul>
+            
          </div>
         </div>
     <footer class="footer">
-        <h3>Tech News Copyright</h3>
+        <h3>Angel Contreras Ramírez 6IM12 &COPY;</h3>
     </footer>
 
     <!-- * Scroll Reveal-->
