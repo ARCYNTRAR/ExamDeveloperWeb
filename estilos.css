@@ -63,6 +63,17 @@ ul{
     margin-left: 20px;
 }
 
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    color: #fff;    
+    background: none;
+    border: none;
+    z-index: 2;
+    font-size: 1.5rem;
+}
 /* ? Showcase */
 hr{
     margin: 10px 0;
@@ -228,6 +239,33 @@ hr{
 /* ? Media Queries */
 
 @media (max-width: 1024px){
+
+    .nav-main .nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+        opacity: .9;
+    }
+
+    .nav-main .nav-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .nav-main .nav-menu li {
+        padding: 20px;        
+        font-size: 14px;
+    }
+
+    .nav-main .nav-menu-right {
+        margin-right: 50px;
+    }
+
     .news-cards{
         grid-template-columns: repeat(2, 1fr);
     }
